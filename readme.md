@@ -7,66 +7,64 @@ The framework follows the <b>Page Object Model (POM)</b> design pattern and demo
 Web Application: <u>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</u>
 <br/><br/>
 <h3>Table of Contents</h3>
-Tech Requirement
-Project Structure
-Pre-requisites
-Verify
-Install Dependencies
-Project Description
+Tech Requirement<br/>
+Project Structure<br/>
+Pre-requisites<br/>
+Verify<br/>
+Install Dependencies<br/>
+Project Description<br/>
 
 <h4>Tech Requirement</h4>
-&bull; <b>Programming Language:</b> Python
-&bull; <b>Automation Tool:</b> Selenium WebDriver
-&bull; <b>Test Framework:</b> Pytest
-&bull; <b>Design Patten:</b> Page Object Model (POM)
-&bull; <b>Reporting:</b> Allure Report
-&bull; <b>Browser:</b> Firefox
-&bull; <b>IDE:</b> PyCharm
+&bull; <b>Programming Language:</b> Python<br/>
+&bull; <b>Automation Tool:</b> Selenium WebDriver<br/>
+&bull; <b>Test Framework:</b> Pytest<br/>
+&bull; <b>Design Patten:</b> Page Object Model (POM)<br/>
+&bull; <b>Reporting:</b> Allure Report<br/>
+&bull; <b>Browser:</b> Firefox<br/>
+&bull; <b>IDE:</b> PyCharm<br/>
 <br/><br/>
 <h4>Project Structure</h4>
-```
-
-C:.
-│   config.ini					# Application & environment configuration
-│   conftest.py					# Pytest fixtures & hooks
-│   README.md					# Project documentation
-│   read_data_from_excel.py			# Utility file (Excel reader)
-│   test_hrm.py					#Test cases
-│   __init__.py
-│   README.md
+---
+C:<br/>
+│   config.ini							# Application & environment configuration<br/>
+│   conftest.py							# Pytest fixtures & hooks<br/>
+│   README.md							# Project documentation<br/>
+│   read_data_from_excel.py				# Utility file (Excel reader)<br/>
+│   test_hrm.py							#Test cases<br/>
+│   __init__.py<br/>
+│   README.md<br/>
 │               
-├───pages					# Page Object classes
-│   │   assign_claim.py
-│   │   assign_leave.py
-│   │   create_user.py
-│   │   explicit_waits.py
-│   │   homepage.py
-│   │   locators.py
-│   │   pim.py
-│   │   search_user.py
-│   │   __init__.py
-│   │              
-├───test_data
-       credentials.xlsx  			# Excel file for Data Driven Testing Framework     
-
+├───pages								# Page Object classes<br/>
+│   	│   assign_claim.py<br/>
+│   	│   assign_leave.py<br/>
+│   	│   create_user.py<br/>
+│   	│   explicit_waits.py<br/>
+│   	│   homepage.py<br/>
+│   	│   locators.py<br/>
+│   	│   pim.py<br/>
+│   	│   search_user.py<br/>
+│   	│   __init__.py<br/>
+│   	│              <br/>
+├───test_data<br/>
+       credentials.xlsx  				# Excel file for Data Driven Testing Framework     
+---
 
 <h4>Prerequisites</h4>
-&bull; Python 3.10 or above
-&bull; Firefox
-&bull; Allure Comandline
-&bull; Git
+&bull; Python 3.10 or above<br/>
+&bull; Firefox<br/>
+&bull; Allure Comandline<br/>
+&bull; Git<br/>
 
 <h4>Verify</h4>
-```
-python --version
-pip --version
-allure --version
-```
+
+python --version<br/>
+pip --version<br/>
+allure --version<br/>
+
 <h4>Install Dependencies</h4>
-```
+
 pip install -r requirements.txt
 
 <h4>Project Description:</h4>
 
 The automation is designed to simulate real-world usage patterns such as form interactions, menu navigation, and authentication validation. Tests will be executed across multiple browsers to ensure cross-browser compatibility. The system will interact with various web elements and execute test cases covering both positive and negative scenarios.
-
