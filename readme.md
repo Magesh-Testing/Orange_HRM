@@ -26,7 +26,6 @@ Project Description<br/>
 <h4>Project Structure</h4>
 ---
 C:<br/>
-│   config.ini							# Application & environment configuration<br/>
 │   conftest.py							# Pytest fixtures & hooks<br/>
 │   README.md							# Project documentation<br/>
 │   read_data_from_excel.py				# Utility file (Excel reader)<br/>
@@ -46,7 +45,10 @@ C:<br/>
 │   	│   __init__.py<br/>
 │   	│              <br/>
 ├───test_data<br/>
-       credentials.xlsx  				# Excel file for Data Driven Testing Framework     
+       | credentials.xlsx  				# Excel file for Data Driven Testing Framework  
+|───utils
+       | autosuggets.py
+       | config.ini					# Application & environment configuration<br/>
 ---
 
 <h4>Prerequisites</h4>
@@ -68,3 +70,4 @@ pip install -r requirements.txt
 <h4>Project Description:</h4>
 
 The automation is designed to simulate real-world usage patterns such as form interactions, menu navigation, and authentication validation. Tests will be executed across multiple browsers to ensure cross-browser compatibility. The system will interact with various web elements and execute test cases covering both positive and negative scenarios.
+
